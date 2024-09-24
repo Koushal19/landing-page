@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+
+
+body{   
+    background: white;    
+}
+
+.body{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height:100vh ;
+}
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    padding:18px;
+    background: #fff;
+    border-radius: 12px;
+    text-decoration:none;
+    border: 2px solid transparent;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #ff9800;
+    box-shadow: 0px 10px 10px #ff9800;
+
+}
+
+.card-list .card-link .card-image{
+    width:100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.card-list .card-link .badge{
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin:16px 0 18px;
+    background: black;
+    width: fit-content;
+    border-radius: 50px;
+
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 600;
+
+
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    border: 2px solid black;
+    background: none;
+    cursor: pointer;
+    color : #ff9800;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color:#fff;
+    background: #ff9800;
+
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width:13px;
+    opacity:0.5;
+    background: black;
+}
+
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: black;
+    margin-top:-35px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-wrapper{
+        margin:0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+    
+}
+
+
+
+
